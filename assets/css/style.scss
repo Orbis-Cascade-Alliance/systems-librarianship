@@ -29,7 +29,7 @@ h3 {
 .wrapper {
   width: 1160px;
   max-width: 100%;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 #skip-nav {
@@ -52,6 +52,9 @@ h3 {
 #side {
   position: fixed;
   width: 300px;
+  max-height: 100%;
+  overflow: scroll;
+  padding: 10px;
 }
 
 nav ul {
