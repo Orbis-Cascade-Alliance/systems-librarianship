@@ -7,4 +7,4 @@ order: 5
 
 # {{ page.title }}
 
-Lesson here
+This presentation will tentatively take place in the February 2025 Systems community call.
