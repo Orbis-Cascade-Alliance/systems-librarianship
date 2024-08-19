@@ -17,7 +17,7 @@ All pages are written in Markdown. See [Basic Syntax](https://www.markdownguide.
 
 To add images to a page, add them to the /assets/img folder. Use the complete path in the image source, including the repository. Example:
 
-    ![Artistic rendering of computers\](/systems-librarianship/assets/img/binary-monitor-particles-600px.jpg)
+    ![Artistic rendering of computers](/systems-librarianship/assets/img/binary-monitor-particles-600px.jpg)
 	
 To embed YouTube videos, use the iframe embed code. Example:
 
