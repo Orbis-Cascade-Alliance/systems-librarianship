@@ -26,6 +26,17 @@ h3 {
   font-size: 130%;
 }
 
+iframe {
+  margin: 0 0 1rem 0;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+ol > li > ol {
+  margin-bottom: 0;
+  list-style: lower-alpha;
+}
+
 .wrapper {
   width: 1160px;
   max-width: 100%;

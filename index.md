@@ -5,7 +5,7 @@ title: Home
 
 # {{ page.title }}
 
-![Artistic rendering of computers](/systems-librarianship/assets/img/binary-monitor-particles-600px.jpg)
+![Artistic rendering of computers]({{ "/assets/img/binary-monitor-particles-600px.jpg" | absolute_url }})
 
 Welcome to Systems Librarianship 101.
 
@@ -25,3 +25,4 @@ The Orbis Cascade Alliance will present these lessons on [Systems community call
 
 ## Citations
 The image at the top of this page, "Three computer monitors sitting on top of each other. Binary monitor particles, computer communication," was published on [Pixabay](https://pixabay.com/) prior to July 2017 under the [Creative Commons CC0 1.0 Universal Public Domain Dedication](https://web.archive.org/web/20161229043156/https://pixabay.com/en/service/terms/) license.
+
