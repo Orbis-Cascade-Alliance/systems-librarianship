@@ -192,9 +192,9 @@ IPv6 addresses are visually distinct from IPv4. Instead of 4 octets separated by
     Decimal:     9728             7956             6825             36608            25448            20275            10437            8016
     Binary:      0010011000000000|0001111100010100|0001101010101001|1000111100000000|0110001101101000|0100111100110011|0010100011000101|0001111101010000
 
-Notations with fewer than eight values indicate **subnets** within a network. For example, the subnet on AWS for the Orbis Cascade Alliance is 2600:1f14:1aa9:8f00::/64, which represents 256 possible IPv6 addresses.
+Notations with fewer than eight values indicate **subnets** within a network. For example, the subnet on AWS for the Orbis Cascade Alliance is 2600:1f14:1aa9:8f00::/64, which represents 256 possible IPv6 addresses. If your institution's network supports IPv6, vendors with IP-restricted platforms might ask you to provide the subnet(s) for your campus(es).
 
-Not all ISPs support IPv6 yet. According to [Google's IPv6 Statistics page](https://www.google.com/intl/en/ipv6/statistics.html), only about 45% of their users access services over IPv6 as of August 2024. If an ISP doesn't support IPv6, their customers can't use those addresses to contact servers. If in the course of your systems librarian job you set up a web server for your patrons, keep in mind that they might not have IPv6 at home, so you'll need to support both protocols simultaneously.
+Not all ISPs support IPv6 yet. According to [Google's IPv6 Statistics page](https://www.google.com/intl/en/ipv6/statistics.html), only about 45% of their users access services over IPv6 as of August 2024. If an ISP doesn't support IPv6, their customers can't use those addresses to contact servers. Because of this, websites need to support both protocols simultaneously for the foreseeable future.
 
 ## Domain Name System (DNS)
 

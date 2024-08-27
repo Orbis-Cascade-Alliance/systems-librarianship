@@ -19,7 +19,7 @@ To add images to a page, add them to the /assets/img folder. Either use the comp
 
     ![Artistic rendering of computers](/systems-librarianship/assets/img/binary-monitor-particles-600px.jpg)
     
-    {% raw %}![Artistic rendering of computers]({{ "/assets/img/binary-monitor-particles-600px.jpg" | absolute_url }}){% endraw %}
+    ![Artistic rendering of computers]({{ "/assets/img/binary-monitor-particles-600px.jpg" | absolute_url }})
 	
 To embed YouTube videos, use the iframe embed code. Example:
 
