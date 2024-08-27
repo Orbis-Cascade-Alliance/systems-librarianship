@@ -169,7 +169,7 @@ Most JavaScript frameworks are used for **front end** development, to manipulate
 
 Computers contact each other by **IP Address.** IP stands for Internet Protocol, the specification for constructing and assigning these identifiers.
 
-**IPv4,** or Internet Protcol version 4, was deployed in the early 1980s. You'll see IPv4 addresses written most often in "dot-decimal notation" with four numbers separated by periods. Each of these four numbers represents eight bits, for a total of 32 bits.
+**IPv4,** or Internet Protcol version 4, was deployed in the early 1980s. You'll see IPv4 addresses written most often in "dot-decimal notation" with 4 numbers separated by periods. Each of these 4 numbers represents 8 bits, for a total of 32 bits.
 
     Example: 35.82.168.182
     Decimal: 35       82       168      182
@@ -182,6 +182,14 @@ Computers within a local network use private IP addresses to communicate with ea
 To communicate over the internet, your ISP assigns your computer a public IP address, which is globally unique. You can check your public IP address simply by Googling "what is my IP address." There are ways to change the IP address that servers receive and respond to, including proxies and VPNs. These topics will be covered in the next lesson, [Security Basics]({{ "/security" | absolute_url }}).
 
 **IPv6,** Internet Protocol version 6, became the latest standard in 2017. The number of possible unique 32-bit IPv4 addresses, about 4.29 billion, is too small to support the worldwide explosion of internet-connected devices for long. To solve this problem, IPv6 uses a 128-bit space, for approximately 340 undecillion possible unique addresses. (That's 38 zeroes!)
+
+IPv6 addresses are visually distinct from IPv4. Instead of 4 octets separated by periods, IPv6 addresses are written as eight 16-bit hexadecimal values separated by colons. Hexademical represents integers using both the numbers 0-9 and the letters A-F, representing the double-digit numbers 10-15.
+
+    Example: 2600:1f14:1aa9:8f00:6368:4f33:28c5:1f50
+    Decimal: 2600             1f14             1aa9             8f00             6368             4f33             28c5             1f50
+    Binary:  0010011000000000|0001111100010100|0001101010101001|1000111100000000|0110001101101000|0100111100110011|0010100011000101|0001111101010000
+
+Addresses with fewer than eight values indicate **subnets** within a network. For example, the subnet for Orbis Cascade Alliance web servers is 2600:1f14:1aa9:8f00::/64, which represents 256 possible IP addresses that could be assigned to a new virtual machine in AWS.
 
 Not all ISPs support IPv6 yet. According to [Google's IPv6 Statistics page](https://www.google.com/intl/en/ipv6/statistics.html), only about 45% of their users access services over IPv6 as of August 2024. If an ISP doesn't support IPv6, their customers can't use those addresses to contact servers. If in the course of your systems librarian job you set up a new web server for your patrons, keep in mind that they might not have IPv6 at home, so you'll need to support both protocols simultaneously.
 
