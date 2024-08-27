@@ -118,7 +118,7 @@ In the head of HTML documents, CSS can be declared within a ``<style>`` node or 
 	
 <iframe width="100%" height="300" src="{{ "/assets/html/lesson1-example2.html" | absolute_url }}"></iframe>
 
-**JavaScript** manipulates HTML documents. For example, scripts can add and remove HTML elements, alter their contents and styling, trigger changes to the page when users click, scroll, or type, etc.
+**JavaScript** manipulates HTML documents. For example, scripts can add and remove HTML elements, alter their contents and styling, trigger changes to the page when users click, scroll, or type, etc. JavaScript can appear anywhere in an HTML document, with functions in a ``<script>`` tag or a reference to a separate file.
 
     <html>
         <head>
@@ -177,33 +177,36 @@ Computers contact each other by **IP Address.** IP stands for Internet Protocol,
 
 In IPv4, some address ranges are reserved for **private** use and others for **public** use.
 
-Computers within a local network use private IP addresses to communicate with each other. These addresses begin with 10, 176.16 through 172.31, or 192.168. If a vendor asks for your IP address to whitelist a service, numbers in these ranges won't be useful to them. The machine at 192.168.1.8 on their network will be different from the machine with the same address on your home or organization's network.
+Computers within a local network use private IP addresses to communicate with each other. These addresses begin with 10, 172.16 through 172.31, or 192.168. If a vendor asks for your IP address to whitelist a service, numbers in these ranges won't be useful to them. The machine at 192.168.1.1 on their network will be different from the machine with the same address on your home or organization's network.
 
 To communicate over the internet, your ISP assigns your computer a public IP address, which is globally unique. You can check your public IP address simply by Googling "what is my IP address." There are ways to change the IP address that servers receive and respond to, including proxies and VPNs. These topics will be covered in the next lesson, [Security Basics]({{ "/security" | absolute_url }}).
 
 **IPv6,** Internet Protocol version 6, became the latest standard in 2017. The number of possible unique 32-bit IPv4 addresses, about 4.29 billion, is too small to support the worldwide explosion of internet-connected devices for long. To solve this problem, IPv6 uses a 128-bit space, for approximately 340 undecillion possible unique addresses. (That's 38 zeroes!)
 
-IPv6 addresses are visually distinct from IPv4. Instead of 4 octets separated by periods, IPv6 addresses are written as eight 16-bit hexadecimal values separated by colons. Hexademical represents integers using both the numbers 0-9 and the letters A-F, representing the double-digit numbers 10-15.
+IPv6 addresses are visually distinct from IPv4. Instead of 4 octets separated by periods, IPv6 addresses are written as eight 16-bit hexadecimal values separated by colons. Hexademical is a Base 16 numerical system that notates integers using both the numbers 0-9 and the letters A-F, in place of the double-digit decimals 10-15.
 
-    Example: 2600:1f14:1aa9:8f00:6368:4f33:28c5:1f50
-    Decimal: 2600             1f14             1aa9             8f00             6368             4f33             28c5             1f50
-    Binary:  0010011000000000|0001111100010100|0001101010101001|1000111100000000|0110001101101000|0100111100110011|0010100011000101|0001111101010000
+(Did You Know: Hexadecimal is also used for colors in CSS, as shown in the section above, with 3 values 00 through FF indicating the intensities of red, green, and blue.)
 
-Addresses with fewer than eight values indicate **subnets** within a network. For example, the subnet for Orbis Cascade Alliance web servers is 2600:1f14:1aa9:8f00::/64, which represents 256 possible IP addresses that could be assigned to a new virtual machine in AWS.
+    Example:     2600:1f14:1aa9:8f00:6368:4f33:28c5:1f50
+    Hexadecimal: 2600             1f14             1aa9             8f00             6368             4f33             28c5             1f50
+    Decimal:     9728             7956             6825             36608            25448            20275            10437            8016
+    Binary:      0010011000000000|0001111100010100|0001101010101001|1000111100000000|0110001101101000|0100111100110011|0010100011000101|0001111101010000
 
-Not all ISPs support IPv6 yet. According to [Google's IPv6 Statistics page](https://www.google.com/intl/en/ipv6/statistics.html), only about 45% of their users access services over IPv6 as of August 2024. If an ISP doesn't support IPv6, their customers can't use those addresses to contact servers. If in the course of your systems librarian job you set up a new web server for your patrons, keep in mind that they might not have IPv6 at home, so you'll need to support both protocols simultaneously.
+Notations with fewer than eight values indicate **subnets** within a network. For example, the subnet on AWS for the Orbis Cascade Alliance is 2600:1f14:1aa9:8f00::/64, which represents 256 possible IPv6 addresses.
+
+Not all ISPs support IPv6 yet. According to [Google's IPv6 Statistics page](https://www.google.com/intl/en/ipv6/statistics.html), only about 45% of their users access services over IPv6 as of August 2024. If an ISP doesn't support IPv6, their customers can't use those addresses to contact servers. If in the course of your systems librarian job you set up a web server for your patrons, keep in mind that they might not have IPv6 at home, so you'll need to support both protocols simultaneously.
 
 ## Domain Name System (DNS)
 
-Remembering long IP addresses for every website would be a nightmare, so in the 1980s the Domain Name System (DNS) was developed. DNS is like an old-fashioned phone book. Phone books listed the names of people and businesses in town with the numbers where they could be reached. Simiarly, DNS associates human-friendly hostnames with the IP addresses of their servers, so users can type *wikipedia.org* into their browsers instead of 198.35.26.96.
+Remembering long IP addresses for every website would be a nightmare, so in the 1980s the Domain Name System (DNS) was developed. DNS is like an old-fashioned phone book. Phone books listed the names of people and businesses in town with the numbers where they could be reached. Similarly, DNS associates human-friendly hostnames with the IP addresses of their servers, so users can type *wikipedia.org* into their browsers instead of 198.35.26.96.
 
-On Windows, you can check a domain's IP address(es) in the command prompt with `nslookup.` The command `nslookup orbiscascade.org` will return the result below, showing the IPv6 and IPv4 addresses of the server for the Orbis Cascade Alliance website on AWS.
+On Windows, you can check a domain's IP address(es) in the Command Prompt application with `nslookup.` The command `nslookup orbiscascade.org` will return the result below, showing the IPv6 and IPv4 addresses of the server for the Orbis Cascade Alliance website on AWS.
 
     Name:       orbiscascade.org
     Addresses:  2600:1f14:1aa9:8f00:6368:4f33:28c5:1f50
                 35.82.168.182
 				
-Before DNS, maps of hostnames and their IP addresses were recorded in HOSTS.TXT files. Hosts files still exist on PCs and can be used to define domains that don't yet exist on the internet, so they'll work on that machine only. On Windows, this file lives at C:\Windows\System32\drivers\etc\hosts. For example, if you need to test a new hosted service for the library and know the IP address from the vendor, you can add the domain you intend to use to this file. Then you can visit the domain in any browser on that computer.
+Before DNS, maps of hostnames and their IP addresses were recorded in HOSTS.TXT files. Hosts files can still be found on PCs and used to define domains that don't yet exist on the internet, so they'll work on that machine only. On Windows, this file lives at C:\Windows\System32\drivers\etc\hosts. For example, if you need to test a new hosted service for the library and know the IP address from the vendor, you can add the domain you intend to use to this file. Then you can visit the domain in any browser on that computer.
 
     # Copyright (c) 1993-2009 Microsoft Corp.
     #
