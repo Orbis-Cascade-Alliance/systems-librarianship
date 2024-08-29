@@ -24,10 +24,8 @@ This lesson will cover the basics of how this information exchange takes place, 
 3. [Domain Name System (DNS)](#domain-name-system-dns)
     1. [DNS Zones and Records](#dns-zones-and-records)
 4. [Requests and APIs](#requests-and-apis)
-    1. [Anatomy of a Request](#anatomy-of-a-request)
-    2. [Status Codes](#status-codes)
-    3. [Request Types](#request-types)
-    4. [Synchronous vs. Asynchronous Requests](#synchronous-vs-asynchronous-requests)
+    1. [Responses and Status Codes](#responses-and-status-codes)
+    2. [Synchronous vs. Asynchronous Requests](#synchronous-vs-asynchronous-requests)
 5. [Programming Languages](#programming-languages)
 6. [Troubleshooting with Browser Tools](#troubleshooting-with-browser-tools)
 7. [Learn More](#learn-more)
@@ -55,111 +53,23 @@ You might have heard of many different languages, frameworks, and applications u
 
 (Did You Know: the EPUB format for eBooks is just a compressed folder of HTML documents!)
 
-    <html>
-        <head>
-            <title>Page Title in the Browser Tab (You Won't See This)</title>
-        </head>
-        <body>
-            <h1>Big Header</h1>
-            <p>This is a paragraph.</p>
-            <p>
-                <a href="https://orbiscascade.org">
-                    This is a link to the Orbis Cascade Alliance website.
-                </a>
-            </p>
-        </body>
-	</html>
+{% include_relative includes/lesson1-example1.html %}
 
-<iframe width="100%" height="150" src="{{ "/assets/html/lesson1-example1.html" | absolute_url }}"></iframe>
+<iframe width="100%" height="150" src="{{ "/_pages/includes/lesson1-example1.html" | absolute_url }}"></iframe>
 
 **CSS** (Cascading Stylesheets) tells browsers how to render the appearance of webpages. CSS rules define aspects like colors, font sizes, the positioning of elements and the spacing between them.
 
 In the head of HTML documents, CSS can be declared within a ``<style>`` node or a linked file that contains rulesets to apply to all elements that meet certain selection criteria (element name, class, ID, etc.). The style attribute can also be added to individual elements in the HTML body to override global rules.
 
-    <html>
-        <head>
-            <title>Page Title in the Browser Tab (You Won't See This)</title>
-            <style>
-                body {
-                    font-family: Times, serif;
-                }
-                p {
-                    font-family: Ariel, sans-serif;
-                }  
-                a {
-                    color: #007c89;
-                }
-                div.box {
-                    border: 2px solid #00f;
-                    background: #eee;
-                    padding: 1rem;
-                    margin: 0 0 1rem 0;
-                }
-            </style>
-        </head>
-        <body>
-            <h1>Big Header</h1>
-            <p>This is a paragraph in Ariel font.</p>
-            <p>
-                <a href="https://orbiscascade.org">
-                    This is a link to the Orbis Cascade Alliance website, in teal.
-                </a>
-            </p>
-            <div class="box">
-                This element will have a bright blue border
-                and a gray background.
-            </div>
-            <div class="box" style="background: #ffe; border-color: #f0f;">
-                The inline style attribute of this element will change
-                the background to yellow and the border to hot pink.
-            </div>
-        </body>
-	</html>
+{% include_relative includes/lesson1-example2.html %}
 	
-<iframe width="100%" height="300" src="{{ "/assets/html/lesson1-example2.html" | absolute_url }}"></iframe>
+<iframe width="100%" height="300" src="{{ "/_pages/includes/lesson1-example2.html" | absolute_url }}"></iframe>
 
 **JavaScript** manipulates HTML documents. For example, scripts can add and remove HTML elements, alter their contents and styling, trigger changes to the page when users click, scroll, or type, etc. JavaScript can appear anywhere in an HTML document, with functions in a ``<script>`` tag or a reference to a separate file.
 
-    <html>
-        <head>
-            <title>Page Title in the Browser Tab (You Won't See This)</title>
-            <style>
-                #myBox {
-                    border: 2px solid #00f;
-                    background: #eee;
-                    padding: 1rem;
-                }
-                #myBox span {
-                    font-weight: bold;
-                }
-            </style>
-            <script>
-                function change_colors() {
-                    var box = document.getElementById("myBox");
-                    box.style.background = "#ffe";
-                    box.style.borderColor = "#f0f";
-                    document.getElementById("color1").textContent = "yellow";
-                    document.getElementById("color2").textContent = "hot pink";
-                    document.getElementById("myBtn").remove();
-                }
-            </script>
-        </head>
-        <body>
-            <h1>Big Header</h1>
-            <div id="myBox">
-                This element will have a <span id="color1">gray</span>
-                background and a <span id="color2">bright blue</span>
-                border around it.
-            </div>
-            <p>
-                <button id="myBtn" onclick="change_colors();">
-                    Click to change box colors and remove this button
-                </button>
-            </p>
-        </body>
-	</html>
+{% include_relative includes/lesson1-example3.html %}
 	
-<iframe width="100%" height="200" src="{{ "/assets/html/lesson1-example3.html" | absolute_url }}"></iframe>
+<iframe width="100%" height="200" src="{{ "/_pages/includes/lesson1-example3.html" | absolute_url }}"></iframe>
 
 There are many JavaScript **libraries** and **frameworks** that developers commonly choose for their sites, instead of writing code from scratch. Libraries are sets of functions that can be used to build or enhance any interface, while frameworks have standardized structures for deploying applications quickly. [jQuery UI](https://jqueryui.com/) is a popular library that can be included on any webpage to add widgets and animations without extensive coding.
 
@@ -247,21 +157,78 @@ For example, GitHub Pages hosts this course website, but visitors use *github.or
 
 Other record types are used for email routing and authentication, website ownership verification, and more niche applications. Some will be shown in the next lesson, [Security Basics](security).
 
-<!--## Requests and APIs
+## Requests and APIs
 
-### Anatomy of a Request
+When using a web browser like Firefox or Chrome, the program sends **HTTP requests** and parses the responses for every link you click and search you submit. Many requests could fly back and forth to render one page, but they all have the same four components:
 
-### Status Codes
+1. An endpoint
+2. A method
+3. Headers
+4. A message body
+    
+The **endpoint** is the URL address of the resource the client needs.
 
-### Request types
+The **method** is one of a limited set of actions a client may take through an HTTP request. These are the most common methods you'll encounter as a systems librarian:
+
+- GET retrieves information from the server.
+- POST sends information to the server, such as data entered into the fields of a web form.
+- PUT replaces data on the server with new content.
+- DELETE removes a resource at the specified URL.
+    
+The **headers** pass metadata to the server. The fields could be which program is placing the request, required authorization credentials, the expected format of the response, and others.
+
+The **body** contains the data for the server to act on. The body will be blank for most simple GET requests on your web browser, but will contain objects for other types of requests.
+
+In Windows, you can send HTTP requests to servers and see the raw responses with the command ``curl``. Try it with the simple HTML example in the first section of this lesson. The response will be the complete contents of the document, starting with ``<html>``.
+
+    curl https://github.orbiscascade.org/systems-librarianship/_pages/includes/lesson1-example1.html
+    
+By default ``curl`` will use the GET method, or the POST method if you add some data to send to the server with the ``-d`` option. Try this one and see what you get back!
+
+    curl https://en.wikipedia.org/w/api.php -d "action=opensearch&search=orbis+cascade"
+
+The example above is a call to an **API** (Application Programming Interface) that searches Wikipedia for article titles containing "orbis cascade" and returns an object containing the submitted keywords, matching article titles, and URLs. You can experiment with changing the string after "search=" from "orbis+cascade" to different keywords like your favorite author or your own institution's name. More examples and accepted parameters beyond "search" are listed in the [MediaWiki Action API Documentation](https://www.mediawiki.org/wiki/API:Opensearch).
+
+In general, APIs allow two applications to communicate. Many technology vendors offer APIs for institutions to interact with resources.
+
+- [Google APIs](https://console.cloud.google.com/apis/library?pli=1) allow developers to interact with Google products. You could use these to fetch cover images from Google Books, programmatically add new rows to a Google Sheet, check for messages in a Gmail account, and so on.
+- [OCLC APIs](https://www.oclc.org/developer/api/oclc-apis.en.html) allow queries of WorldCat and related data, like entities and FAST headings. These APIs could be used for performing collection analyses, adding linked data features to Discovery interfaces, etc.
+- The [Ex Libris APIs](https://developers.exlibrisgroup.com/) allow access to data in Clarivate products like Alma and Primo. Potential uses in library applications include checking open hours for display on a website, making corrections to bibliographic records *en masse,* performing Primo keyword searches for a Bento Box interface, or getting the results of a shared Analytics report.
+- [Springshare LibGuides](https://buzz.springshare.com/producthighlights/libguides-libraries/widgets-api) offers an API to fetch links to existing guides, to display on LMS course pages for example.
+
+### Responses and Status Codes
+
+After a client submits an HTTP request, the server responds with a **status code** to indicate success or failure, along with headers and body similar to the structure of the request.
+
+There are [599 potential status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status), but these are the ones you're likely to encounter during troubleshooting and development:
+
+- **200 OK**: The request succeeded. The message body will contain the results, such as the webpage HTML or the expected output of an API call.
+- **301 Moved Permanently**: The requested resource is no longer at this URL. The body will contain the new one.
+- **302 Found** and **307 Temporary Redirect**: The requested resource has been moved to a new location temporarily, but the same URL should be used for future requests.
+- **403 Forbidden**: The client doesn't have permission to access this resource.
+- **404 Not Found**: The server can't find a resource at the specified location.
+- **500 Internal Server Error**: The server doesn't know how to handle this request. There could be a configuration problem on the server, or there could be something wrong with the structure or contents of the request.
+- **503 Service Unavailable**: The server can't properly complete the request, for example because the application is down for maintenance.
 
 ### Synchronous vs. Asynchronous Requests
 
+When you use the ``curl`` command, you're performing a **synchronous** request. In this type of request, the client won't anything else until the request is complete. Your Command Prompt window will be frozen until the response appears, though this may be nearly instant for most of your experiments. Or if an older webpage takes a long time to load, that browser tab will remain blank until it does.
+
+Modern websites utilize **asynchronous** requests to return pages to users more quickly, while loading other information that takes time to generate. In this type of request, the user can do other things while the client waits for a response in the background.
+
+For example, if you submit any search in [Archives West](https://archiveswest.orbiscascade.org), you'll first see a page with a spinning icon. This is the HTML content returned by the initial synchronous GET request.
+
+![Screenshot of Archives West with a loading icon]({{ "/assets/img/aw-loading.png" | absolute_url }})
+
+As soon as the page loads, JavaScript submits an asynchronous request for the full-text search results, which will replace the spinning icon when the browser receives them.
+
+![Screenshot of Archives West with search results]({{ "/assets/img/aw-results.png" | absolute_url }})
+
 ## Programming Languages
 
-(Include server-side vs client-side)
+<!--(Include server-side vs client-side)-->
 
-## Troubleshooting with Browser Tools-->
+## Troubleshooting with Browser Tools
 
 ## Learn More
 

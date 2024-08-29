@@ -1,0 +1,38 @@
+    <html>
+        <head>
+            <title>Page Title in the Browser Tab (You Won't See This)</title>
+            <style>
+                #myBox {
+                    border: 2px solid #00f;
+                    background: #eee;
+                    padding: 1rem;
+                }
+                #myBox span {
+                    font-weight: bold;
+                }
+            </style>
+            <script>
+                function change_colors() {
+                    var box = document.getElementById("myBox");
+                    box.style.background = "#ffe";
+                    box.style.borderColor = "#f0f";
+                    document.getElementById("color1").textContent = "yellow";
+                    document.getElementById("color2").textContent = "hot pink";
+                    document.getElementById("myBtn").remove();
+                }
+            </script>
+        </head>
+        <body>
+            <h1>Big Header</h1>
+            <div id="myBox">
+                This element will have a <span id="color1">gray</span>
+                background and a <span id="color2">bright blue</span>
+                border around it.
+            </div>
+            <p>
+                <button id="myBtn" onclick="change_colors();">
+                    Click to change box colors and remove this button
+                </button>
+            </p>
+        </body>
+    </html>
