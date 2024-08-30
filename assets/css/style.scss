@@ -9,6 +9,10 @@ body {
   padding: 0;
 }
 
+a {
+  color: #226CA2;
+}
+
 a:hover, a:focus, a:active {
   font-weight: inherit;
   text-decoration: underline;
@@ -35,6 +39,22 @@ iframe {
 ol > li > ol {
   margin-bottom: 0;
   list-style: lower-alpha;
+}
+
+.highlight .cp {
+  color: #666666;
+}
+
+.highlight .m {
+  color: #027979;
+}
+
+.highlight .na {
+  color: #047b7b;
+}
+
+.highlight .nb {
+  color: #036688;
 }
 
 .wrapper {
