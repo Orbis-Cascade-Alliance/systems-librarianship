@@ -7,7 +7,7 @@ order: 1
 
 # {{ page.title }}
 
-![AI-generated illustration of Earth surrounded by a network of lights]({{ "/assets/img/earth-lights.png" | absolute_url }})
+[![AI-generated illustration of Earth surrounded by a network of lights]({{ "/assets/img/earth-lights.png" | absolute_url }})]({{ "/assets/img/earth-lights.png" | absolute_url }})
 
 Most troubleshooting you will do as a systems librarian boils down to understanding how the internet works, and identifying where problems originate so you can contact the appropriate people for a resolution.
 
@@ -15,7 +15,7 @@ When an undergraduate has difficulty accessing a research database from off camp
 
 Though these scenarios can seem complex, the process of identifying the causes is straightforward: understand which systems are supposed to talk to each other at each step of the process, and look for breakdowns in the exchange of information. Either the library's proxy service is receiving the expected response from the school's Single Sign-On system, or it's not. Either the catalog host's servers are returning the correct data for a full record display, or they're not.
 
-This lesson will cover the basics of how this information exchange takes place, so you can work out which piece has gone awry in a variety of situations.
+This lesson will cover the basics of how this information exchange takes place, so you can work out which piece has gone awry in a variety of situations. These foundational concepts are particularly dense, so the contents will presented live over two sessions.
 
 ## In This lesson
 1. [Servers and Clients](#servers-and-clients)
@@ -25,11 +25,10 @@ This lesson will cover the basics of how this information exchange takes place, 
     1. [DNS Zones and Records](#dns-zones-and-records)
 4. [Requests and APIs](#requests-and-apis)
     1. [Responses and Status Codes](#responses-and-status-codes)
-    2. [Synchronous vs. Asynchronous Requests](#synchronous-vs-asynchronous-requests)
-5. [Programming Languages](#programming-languages)
-6. [Troubleshooting with Browser Tools](#troubleshooting-with-browser-tools)
-7. [Learn More](#learn-more)
-8. [Citations](#citations)
+    2. [Synchronization](#synchronization)
+5. [Browser Tools](#browser-tools)
+6. [Programming Languages](#programming-languages)
+7. [Citations](#citations)
 
 ## Servers and Clients
 
@@ -53,27 +52,39 @@ You might have heard of many different languages, frameworks, and applications u
 
 (Did You Know: the EPUB format for eBooks is just a compressed folder of HTML documents!)
 
+```html
 {% include_relative includes/lesson1-example1.html %}
+```
 
-<iframe width="100%" height="150" src="{{ "/_pages/includes/lesson1-example1.html" | absolute_url }}"></iframe>
+<iframe title="HTML example" width="100%" height="150" src="{{ "/_pages/includes/lesson1-example1.html" | absolute_url }}"></iframe>
 
 **CSS** (Cascading Stylesheets) tells browsers how to render the appearance of webpages. CSS rules define aspects like colors, font sizes, the positioning of elements and the spacing between them.
 
 In the head of HTML documents, CSS can be declared within a ``<style>`` node or a linked file that contains rulesets to apply to all elements that meet certain selection criteria (element name, class, ID, etc.). The style attribute can also be added to individual elements in the HTML body to override global rules.
 
+```html
 {% include_relative includes/lesson1-example2.html %}
-	
-<iframe width="100%" height="300" src="{{ "/_pages/includes/lesson1-example2.html" | absolute_url }}"></iframe>
+```
+
+<iframe title="HTML example with CSS" width="100%" height="300" src="{{ "/_pages/includes/lesson1-example2.html" | absolute_url }}"></iframe>
 
 **JavaScript** manipulates HTML documents. For example, scripts can add and remove HTML elements, alter their contents and styling, trigger changes to the page when users click, scroll, or type, etc. JavaScript can appear anywhere in an HTML document, with functions in a ``<script>`` tag or a reference to a separate file.
 
+```html
 {% include_relative includes/lesson1-example3.html %}
+```
 	
-<iframe width="100%" height="200" src="{{ "/_pages/includes/lesson1-example3.html" | absolute_url }}"></iframe>
+<iframe title="HTML example with JavaScript" width="100%" height="200" src="{{ "/_pages/includes/lesson1-example3.html" | absolute_url }}"></iframe>
 
 There are many JavaScript **libraries** and **frameworks** that developers commonly choose for their sites, instead of writing code from scratch. Libraries are sets of functions that can be used to build or enhance any interface, while frameworks have standardized structures for deploying applications quickly. [jQuery UI](https://jqueryui.com/) is a popular library that can be included on any webpage to add widgets and animations without extensive coding.
 
 Most JavaScript frameworks are used for **front end** development, to manipulate HTML on the client. One example is [Angular](https://angular.dev/), which is used in Ex Libris's Alma and Primo NDE products. Some JavaScript frameworks can also be used for **back end** development, to construct web servers. An example is [Node.js](https://nodejs.org/en), which is used in the [Primo Development Environment](https://github.com/ExLibrisGroup/primo-explore-devenv).
+
+To learn more about HTML, CSS, and JavaScript, these W3schools tutorials are a good starting point.
+
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/)
+- [JavaScript](https://www.w3schools.com/js/)
 
 ## IP Addresses
 
@@ -177,9 +188,11 @@ The **method** is one of a limited set of actions a client may take through an H
     
 The **headers** pass metadata to the server. The fields could be which program is placing the request, required authorization credentials, the expected format of the response, and others.
 
-The **body** contains the data for the server to act on. The body will be blank for most simple GET requests on your web browser, but will contain objects for other types of requests.
+The **body** contains the data for the server to act on. The body will be blank for most simple GET requests on your web browser, but it will contain objects for other types of requests.
 
-In Windows, you can send HTTP requests to servers and see the raw responses with the command ``curl``. Try it with the simple HTML example in the first section of this lesson. The response will be the complete contents of the document, starting with ``<html>``.
+In Windows, you can send HTTP requests to servers and see the raw responses in Command Prompt with ``curl``. This command will add the required components for a well-structured message automatically, so at a minimum you only need to provide the endpoint. On execution, you'll see what has been returned in the body of the response.
+
+Try it with the simple HTML example in the first section of this lesson. The response will be the complete contents of the document, starting with ``<html>``.
 
     curl https://github.orbiscascade.org/systems-librarianship/_pages/includes/lesson1-example1.html
     
@@ -187,7 +200,7 @@ By default ``curl`` will use the GET method, or the POST method if you add some 
 
     curl https://en.wikipedia.org/w/api.php -d "action=opensearch&search=orbis+cascade"
 
-The example above is a call to an **API** (Application Programming Interface) that searches Wikipedia for article titles containing "orbis cascade" and returns an object containing the submitted keywords, matching article titles, and URLs. You can experiment with changing the string after "search=" from "orbis+cascade" to different keywords like your favorite author or your own institution's name. More examples and accepted parameters beyond "search" are listed in the [MediaWiki Action API Documentation](https://www.mediawiki.org/wiki/API:Opensearch).
+The example above is a call to an **API** (Application Programming Interface) that searches Wikipedia for article titles containing "orbis cascade" and returns an object with the submitted keywords, matching article titles, and URLs. You can experiment with changing the string after "search=" from "orbis+cascade" to different keywords like your favorite author or your own institution's name. More examples and accepted parameters beyond "search" are listed in the [MediaWiki Action API Documentation](https://www.mediawiki.org/wiki/API:Opensearch).
 
 In general, APIs allow two applications to communicate. Many technology vendors offer APIs for institutions to interact with resources.
 
@@ -195,6 +208,8 @@ In general, APIs allow two applications to communicate. Many technology vendors 
 - [OCLC APIs](https://www.oclc.org/developer/api/oclc-apis.en.html) allow queries of WorldCat and related data, like entities and FAST headings. These APIs could be used for performing collection analyses, adding linked data features to Discovery interfaces, etc.
 - The [Ex Libris APIs](https://developers.exlibrisgroup.com/) allow access to data in Clarivate products like Alma and Primo. Potential uses in library applications include checking open hours for display on a website, making corrections to bibliographic records *en masse,* performing Primo keyword searches for a Bento Box interface, or getting the results of a shared Analytics report.
 - [Springshare LibGuides](https://buzz.springshare.com/producthighlights/libguides-libraries/widgets-api) offers an API to fetch links to existing guides, to display on LMS course pages for example.
+
+For more experimentation, the [Public APIs GitHub Repository](https://github.com/toddmotto/public-apis) lists known free APIs with a wide spectrum of uses, from generating random cat facts to querying photos taken by NASA's rovers on Mars.
 
 ### Responses and Status Codes
 
@@ -210,33 +225,71 @@ There are [599 potential status codes](https://developer.mozilla.org/en-US/docs/
 - **500 Internal Server Error**: The server doesn't know how to handle this request. There could be a configuration problem on the server, or there could be something wrong with the structure or contents of the request.
 - **503 Service Unavailable**: The server can't properly complete the request, for example because the application is down for maintenance.
 
-### Synchronous vs. Asynchronous Requests
+### Synchronization
 
-When you use the ``curl`` command, you're performing a **synchronous** request. In this type of request, the client won't anything else until the request is complete. Your Command Prompt window will be frozen until the response appears, though this may be nearly instant for most of your experiments. Or if an older webpage takes a long time to load, that browser tab will remain blank until it does.
+Imagine you're at a conference for librarians, and the catering staff wheels out the buffet table for lunch. On the table is a line of dishes with one serving spoon each. If dozens of attendees were to rush the table at once to get food, most of them couldn't reach it in the chaos. Only a few people at the front could grab plates and serve themselves, while everyone else goes hungry.
 
-Modern websites utilize **asynchronous** requests to return pages to users more quickly, while loading other information that takes time to generate. In this type of request, the user can do other things while the client waits for a response in the background.
+Because we know this, consciously or not, the attendees will "synchronize" their movements. They'll queue up at one end of the table, and each will wait patiently until the person before them has finished serving from a dish before stepping forward to take the spoon. This way we ensure everybody gets fed before the caterers cover the dishes and whisk the table away.
 
-For example, if you submit any search in [Archives West](https://archiveswest.orbiscascade.org), you'll first see a page with a spinning icon. This is the HTML content returned by the initial synchronous GET request.
+In computing, multiple processes could require access to limited resources. Similar to the conference buffet, a **synchronous** application will ensure the processes don't try to execute all at once. The resources will be locked until one process is complete, and then the next process takes its turn. The application will return its results after all processes have finished.
 
-![Screenshot of Archives West with a loading icon]({{ "/assets/img/aw-loading.png" | absolute_url }})
+Now imagine the conference doesn't cater dinner, and you decide to order room service. You don't know or care how many other hotel guests also want their dinners. You don't have to coordinate with them. The kitchen will figure that out. You simply use the hotel's phone line or website to place your order, and then you wait for staff to knock at your door with the food on a tray. In the meantime, you could watch television, take a well-deserved nap, or do any number of things.
+
+Room service is like an **asynchronous** request in an application. Modern websites utilize asynchronous requests to return some information to users quickly, while loading more information that takes time to generate. The user can see and take other actions on the webpage, instead of waiting for the application to complete all tasks before returning everything at once.
+
+For example, if you submit any search in [Archives West](https://archiveswest.orbiscascade.org), you'll first see a page with a spinning icon. This is the HTML content returned to the browser by the initial GET request.
+
+[![Screenshot of Archives West with a loading icon]({{ "/assets/img/aw-loading.png" | absolute_url }})]({{ "/assets/img/aw-loading.png" | absolute_url }})
 
 As soon as the page loads, JavaScript submits an asynchronous request for the full-text search results, which will replace the spinning icon when the browser receives them.
 
-![Screenshot of Archives West with search results]({{ "/assets/img/aw-results.png" | absolute_url }})
+[![Screenshot of Archives West with search results]({{ "/assets/img/aw-results.png" | absolute_url }})]({{ "/assets/img/aw-results.png" | absolute_url }})
+
+## Browser Tools
+
+Modern browsers include tools that allow you to examine the HTML structure, the loaded stylesheets and scripts, and all the requests and responses that take place to populate the webpage you see.
+
+- In Mozilla Firefox, these are called the Web Developer Tools.
+- In Google Chrome, Developer Tools
+- In Microsoft Edge, DevTools
+
+All three can be opened on Windows with the F12 key, or the shortcut CTRL+SHIFT+I. You can try it on this very page.
+
+No matter which browser you're in, one tab of these tools will allow you to see the HTML. It might be called **Inspector** or **Elements**. Try opening various HTML nodes and matching them to what you see on the screen. To examine the HTML of a particular element on the page, you can right-click it and select "Inspect."
+
+[![Screenshot of the Inspect option on a webpage element]({{ "/assets/img/devtools-inspect.png" | absolute_url }})]({{ "/assets/img/devtools-inspect.png" | absolute_url }})
+
+The screenshot below of Firefox's tools highlights the iframe element used to display the simple HTML sample in the first section. You can click the image to view it at its original size.
+
+[![Screenshot of the Inspector in Firefox web developer tools]({{ "/assets/img/devtools-inspector.png" | absolute_url }})]({{ "/assets/img/devtools-inspector.png" | absolute_url }})
+
+If you want, you can manipulate the HTML to change how the page looks. Try right-clicking on an HTML node and selecting Delete Node or Delete Element. That content will disappear from the webpage. It's okay, you're only deleting it from the client, not the server. The element will appear again after you refresh the page.
+
+[![Screenshot of the Inspector in Firefox web developer tools, node deletion option]({{ "/assets/img/devtools-inspector-delete.png" | absolute_url }})]({{ "/assets/img/devtools-inspector-delete.png" | absolute_url }})
+
+The Inspector/Elements tab will also show you the CSS applied to the node you're examining, including the rules as written and the results as computed.
+
+[![Screenshot of the Inspector in Firefox web developer tools, styles window]({{ "/assets/img/devtools-styles.png" | absolute_url }})]({{ "/assets/img/devtools-styles.png" | absolute_url }})
+
+You can adjust the CSS rules here to see what happens. This is a great way to test stylesheet changes to a web interface without making them permanent or public. Here I've added "background: green" to iframes for illustrative purposes.
+
+[![Screenshot of the Inspector in Firefox web developer tools, styles window with edits]({{ "/assets/img/devtools-styles-edited.png" | absolute_url }})]({{ "/assets/img/devtools-styles-edited.png" | absolute_url }})
+
+When troubleshooting potential JavaScript issues, you'll often find helpful clues in the **Console** tab, which is available in all three major browsers. The console will display messages printed by functions, as well as warnings and errors.
+
+Try opening the console in your browser's tools right now, and then click the button below to see a message appear there. Bonus challenge: can you find the JavaScript function that does this?
+
+{% include_relative includes/lesson1-button.html %}
+
+**Network** is another tab you'll use frequently as a systems librarian. While this tab is open, you can see every request the browser places, and the status codes and contents of the responses. They'll include the initial HTML of a webpage, plus all images, subdocuments (such as the HTML examples in iframes), and asynchronous requests triggered by a user action or a timer. Click one of the requests in the list to see all the headers and message bodies described in the [Requests and APIs](#requests-and-apis) section.
+
+[![Screenshot of the Network tab in Firefox web developer tools]({{ "/assets/img/devtools-network.png" | absolute_url }})]({{ "/assets/img/devtools-network.png" | absolute_url }})
+
+Each browser as additional tabs you might find useful, like for seeing and manipulating stored cookies and checking for accessibility issues. Try them all to see what information you can get.
 
 ## Programming Languages
 
 <!--(Include server-side vs client-side)-->
-
-## Troubleshooting with Browser Tools
-
-## Learn More
-
-These W3schools tutorials are a good starting point to learn the basics of HTML, CSS, and JavaScript.
-
-- [HTML](https://www.w3schools.com/html/)
-- [CSS](https://www.w3schools.com/css/)
-- [JavaScript](https://www.w3schools.com/js/)
 
 ## Citations
 

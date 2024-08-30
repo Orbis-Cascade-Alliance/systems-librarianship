@@ -5,7 +5,7 @@ title: Home
 
 # {{ page.title }}
 
-![Artistic rendering of computers]({{ "/assets/img/binary-monitor-particles-600px.jpg" | absolute_url }})
+[![Artistic rendering of computers]({{ "/assets/img/binary-monitor-particles-600px.jpg" | absolute_url }})]({{ "/assets/img/binary-monitor-particles-600px.jpg" | absolute_url }})
 
 Welcome to Systems Librarianship 101.
 
