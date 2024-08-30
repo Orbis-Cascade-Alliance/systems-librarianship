@@ -30,7 +30,6 @@ This lesson will cover the basics of how this information exchange takes place, 
     2. [Synchronization](#synchronization)
 5. [Browser Tools](#browser-tools)
 6. [Programming Languages](#programming-languages)
-7. [Citations](#citations)
 
 ## Servers and Clients
 
