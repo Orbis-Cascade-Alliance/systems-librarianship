@@ -49,7 +49,7 @@ A "server" can also refer to one program on a machine. **MySQL** is a common dat
 
 You might have heard of many different languages, frameworks, and applications used to serve up websites, but they all generate documents with only three essential components for interpretation by a browser: HTML, CSS, and JavaScript.
 
-**HTML** is the document type browsers display as a webpage. Every document consists of a head, with invisible metadata like the title and references to styles and scripts; and a body, with the page contents rendered for users.
+**HTML** is the document type browsers display as a webpage. An HTML document consists of **elements**, also known as **nodes**, with a start tag (e.g., ``<div>``), some contents like text and other child elements, and an end tag (e.g., ``</div>``). Structurally, every document consists of a head, with invisible metadata like the title and references to styles and scripts; and a body, with the page contents rendered for users.
 
 (Did You Know: the EPUB format for eBooks is just a compressed folder of HTML documents!)
 
@@ -61,7 +61,7 @@ You might have heard of many different languages, frameworks, and applications u
 
 **CSS** (Cascading Stylesheets) tells browsers how to render the appearance of webpages. CSS rules define aspects like colors, font sizes, the positioning of elements and the spacing between them.
 
-In the head of HTML documents, CSS can be declared within a ``<style>`` node or a linked file that contains rulesets to apply to all elements that meet certain selection criteria (element name, class, ID, etc.). The style attribute can also be added to individual elements in the HTML body to override global rules.
+In the head of HTML documents, CSS can be declared within a ``<style>`` element or a linked file that contains rulesets to apply to all elements that meet certain selection criteria (element name, class, ID, etc.). The style attribute can also be added to individual elements in the HTML body to override global rules.
 
 ```html
 {% include_relative includes/lesson1-example2.html %}
@@ -99,7 +99,7 @@ Computers contact each other by **IP Address.** IP stands for Internet Protocol,
 
 In IPv4, some address ranges are reserved for **private** use and others for **public** use.
 
-Computers within a local network use private IP addresses to communicate with each other. These addresses begin with 10, 172.16 through 172.31, or 192.168. If a vendor asks for your IP address to whitelist a service, numbers in these ranges won't be useful to them. The machine at 192.168.1.1 on their network will be different from the machine with the same address on your home or organization's network.
+Computers within a local network, like a home or a university campus, use private IP addresses to communicate with each other. These addresses begin with 10, 172.16 through 172.31, or 192.168. If a vendor asks for your IP address to whitelist a service, numbers in these ranges won't be useful to them. The machine at 192.168.1.1 on their network will be different from the machine with the same address on your home or organization's network.
 
 To communicate over the internet, your ISP assigns your computer a public IP address, which is globally unique. You can check your public IP address simply by Googling "what is my IP address." There are ways to change the IP address that servers receive and respond to, including proxies and VPNs. These topics will be covered in the next lesson, [Security Basics]({{ "/security" | absolute_url }}).
 
@@ -122,7 +122,9 @@ Not all ISPs support IPv6 yet. According to [Google's IPv6 Statistics page](http
 
 Remembering long IP addresses for every website would be a nightmare, so in the 1980s the Domain Name System (DNS) was developed. DNS is like an old-fashioned phone book. Phone books listed the names of people and businesses in town with the numbers where they could be reached. Similarly, DNS associates human-friendly hostnames with the IP addresses of their servers, so users can type *wikipedia.org* into their browsers instead of 198.35.26.96.
 
-On Windows, you can check a domain's IP address(es) in the Command Prompt application with `nslookup.` The command `nslookup orbiscascade.org` will return the result below, showing the IPv6 and IPv4 addresses of the server for the Orbis Cascade Alliance website on AWS.
+On Windows, you can check a domain's IP address(es) in the Command Prompt application with `nslookup.` You can find this application by searching Windows for "command" or "cmd," or under the Control Panel > System and Security > Windows Tools. (The path will be different in versions before Windows 11.)
+
+The command `nslookup orbiscascade.org` will return the result below, showing the IPv6 and IPv4 addresses of the server for the Orbis Cascade Alliance website on AWS.
 
     Name:       orbiscascade.org
     Addresses:  2600:1f14:1aa9:8f00:6368:4f33:28c5:1f50
@@ -148,7 +150,7 @@ Before DNS, maps of hostnames and their IP addresses were recorded in HOSTS.TXT 
     #      102.54.94.97     rhino.acme.com          # source server
     #       38.25.63.10     x.acme.com              # x client host
 
-Taking this approach, you will encounter browser warnings about potential security risks. You would also see these warnings if you attempted to visit a website in a browser by its IP address instead of its domain. This is because neither a made-up domain nor the raw IP address matches a valid security certificate on the server. The next lesson, [Security Basics]({{ "/security" | absolute_url }}), will address certificates and HTTPS.
+Taking this approach, you'll likely encounter browser warnings about potential security risks. You might also see these warnings if you attempted to visit a website in a browser by its IP address instead of its domain. This is because neither a made-up domain nor the raw IP address matches a valid security certificate on the server. The next lesson, [Security Basics]({{ "/security" | absolute_url }}), will address certificates and HTTPS.
 
 ### DNS Zones and Records
 
@@ -182,8 +184,8 @@ The **endpoint** is the URL address of the resource the client needs.
 
 The **method** is one of a limited set of actions a client may take through an HTTP request. These are the most common methods you'll encounter as a systems librarian:
 
-- GET retrieves information from the server.
-- POST sends information to the server, such as data entered into the fields of a web form.
+- GET retrieves information from the server. These requests may include some data in query parameters appended to the endpoint URL after a question mark (?), like <span style="white-space: nowrap">[https://www.google.com/search?q=test](https://www.google.com/search?q=test)</span>.
+- POST sends information to the server, such as the filled fields of a web form. POST requests include data for the server in the message body, instead of the URL.
 - PUT replaces data on the server with new content.
 - DELETE removes a resource at the specified URL.
     
@@ -256,19 +258,19 @@ Modern browsers include tools that allow you to examine the HTML structure, the 
 
 All three can be opened on Windows with the F12 key, or the shortcut CTRL+SHIFT+I. You can try it on this very page.
 
-No matter which browser you're in, one tab of these tools will allow you to see the HTML. It might be called **Inspector** or **Elements**. Try opening various HTML nodes and matching them to what you see on the screen. To examine the HTML of a particular element on the page, you can right-click it and select "Inspect."
+No matter which browser you're in, one tab of these tools will allow you to see the HTML. It might be called **Inspector** or **Elements**. Try opening various HTML elements and matching them to what you see on the screen. To examine the HTML of a particular element on the page, you can right-click it and select "Inspect."
 
 [![Screenshot of the Inspect option on a webpage element]({{ "/assets/img/devtools-inspect.png" | absolute_url }})]({{ "/assets/img/devtools-inspect.png" | absolute_url }})
 
-The screenshot below of Firefox's tools highlights the iframe element used to display the simple HTML sample in the first section. You can click the image to view it at its original size.
+The screenshot below of Firefox's tools highlights the iframe element used to display the simple HTML sample in the first section. (You can click the image to view a larger version.)
 
 [![Screenshot of the Inspector in Firefox web developer tools]({{ "/assets/img/devtools-inspector.png" | absolute_url }})]({{ "/assets/img/devtools-inspector.png" | absolute_url }})
 
-If you want, you can manipulate the HTML to change how the page looks. Try right-clicking on an HTML node and selecting Delete Node or Delete Element. That content will disappear from the webpage. It's okay, you're only deleting it from the client, not the server. The element will appear again after you refresh the page.
+If you want, you can manipulate the HTML to change how the page looks. Try right-clicking on an HTML element and selecting Delete Node or Delete Element. That content will disappear from the webpage. It's okay, you're only deleting it from the client, not the server. The element will appear again after you refresh the page.
 
 [![Screenshot of the Inspector in Firefox web developer tools, node deletion option]({{ "/assets/img/devtools-inspector-delete.png" | absolute_url }})]({{ "/assets/img/devtools-inspector-delete.png" | absolute_url }})
 
-The Inspector/Elements tab will also show you the CSS applied to the node you're examining, including the rules as written and the results as computed.
+The Inspector/Elements tab will also show you the CSS applied to the element you're examining, including the rules as written and the results as computed.
 
 [![Screenshot of the Inspector in Firefox web developer tools, styles window]({{ "/assets/img/devtools-styles.png" | absolute_url }})]({{ "/assets/img/devtools-styles.png" | absolute_url }})
 
@@ -286,7 +288,7 @@ Try opening the console in your browser's tools right now, and then click the bu
 
 [![Screenshot of the Network tab in Firefox web developer tools]({{ "/assets/img/devtools-network.png" | absolute_url }})]({{ "/assets/img/devtools-network.png" | absolute_url }})
 
-Each browser as additional tabs you might find useful, like for seeing and manipulating stored cookies and checking for accessibility issues. Try them all to see what information you can get.
+Each browser has additional tabs you might find useful, like for seeing and manipulating stored cookies and checking for accessibility issues. Try them all to see what information you can get.
 
 ## Programming Languages
 
@@ -306,7 +308,7 @@ Below are some programming languages you're likely to encounter in library appli
 
 - **[PHP](https://www.php.net/manual/en/index.php)** (PHP Hypertext Preprocessing) is a popular scripting language for web development. The open-source CMSs [WordPress](https://wordpress.org/) and [Drupal](https://www.drupal.org/) are written in PHP, as is the Orbis Cascade Alliance's [Archives West](https://archiveswest.orbiscascade.org). If you intend to develop websites for your library, PHP is a good choice to learn.
 
-- **[Python](https://www.python.org/)** is commonly used for personal projects that automate tasks or analyze large amounts of data. Because Python was designed to be a simple language to read and write, and there are many libraries that can do complex tasks for you (like creating GUIs and performing mathematical computations), you can create programs that do a lot with little coding.
+- **[Python](https://www.python.org/)** is commonly used for personal projects that automate tasks or analyze large amounts of data. Because Python was designed to be a simple language to read and write, and there are many libraries that can do complex tasks for you (like creating GUIs and performing mathematical computations), you can create programs that do a lot with little coding. Though Python can be used to construct web servers, it's best suited for running scripts on your own machine.
 
 - **[Ruby](https://www.ruby-lang.org/en/)** is the language used for open-source library platforms like [Blacklight](https://projectblacklight.org/) and [ArchivesSpace](https://archivesspace.org/). This course website is generated with [Jekyll](https://jekyllrb.com/), which is also a Ruby framework.
 
