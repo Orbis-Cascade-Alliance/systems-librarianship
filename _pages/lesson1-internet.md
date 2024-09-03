@@ -169,7 +169,7 @@ For example, GitHub Pages hosts this course website, but visitors use *github.or
 
     github IN CNAME orbis-cascade-alliance.github.io.
 
-Other record types are used for email routing and authentication, website ownership verification, and more niche applications. Some will be shown in the next lesson, [Security Basics](security).
+Other record types are used for email routing and authentication, website ownership verification, and more niche applications. Some will be shown in the next lesson, [Security Basics]({{ "/security" | absolute_url }}).
 
 ## Requests and APIs
 
@@ -247,6 +247,12 @@ For example, if you submit any search in [Archives West](https://archiveswest.or
 As soon as the page loads, JavaScript submits an asynchronous request for the full-text search results, which will replace the spinning icon when the browser receives them.
 
 [![Screenshot of Archives West with search results]({{ "/assets/img/aw-results.png" | absolute_url }})]({{ "/assets/img/aw-results.png" | absolute_url }})
+
+The ubiquity of asynchronous requests in modern web applications means that in some situations, in addition to investigating *whether* information is being exchanged, you might need to consider *when* the information is supposed to be exchanged.
+
+For example, Ex Libris's Primo loads the many components of its interface through multiple asynchronous requests. Primo will perform separate individual requests for search results, availability statuses and call numbers, requesting options, facets, and so on. When developing catalog customizations, it's important to check whether the data you want to use exists at the time your code tries to use it.
+
+Another example: many subscription databases load external scripts after the initial delivery of a page. If your institution uses EZproxy to provide off-campus access, these domains need to be added to your configuration with a special directive ([HJ](https://help.oclc.org/Library_Management/EZproxy/Configure_resources/HostJavaScript_HJ) or [DJ](https://help.oclc.org/Library_Management/EZproxy/Configure_resources/DomainJavaScript_DJ)). Otherwise, only the original page contents will be proxied, and features dependent on these scripts won't work properly. Proxying will be discussed more in [Security Basics]({{ "/security" | absolute_url }}).
 
 ## Browser Tools
 
