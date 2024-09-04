@@ -7,9 +7,9 @@ title: Home
 
 [![Artistic rendering of computers]({{ "/assets/img/binary-monitor-particles-600px.jpg" | absolute_url }})]({{ "/assets/img/binary-monitor-particles-600px.jpg" | absolute_url }})
 
-Welcome to Systems Librarianship 101.
+Welcome to Systems Librarianship 101. This series of lessons is designed for library staff who are new to systems work. You might be at the beginning of your library career, or you might have previous experience in other functional areas of librarianship like cataloging or circulation and recently assumed responsibilities in systems. The topics will cover both hard and soft skills you might find useful as you learn to implement, troubleshoot, and support library software and technologies.
 
-The Orbis Cascade Alliance will present these lessons on [Systems community calls](https://www.orbiscascade.org/programs/systems/calls/) from September 2024 through June 2025. Recordings will be posted to the lesson pages after the calls.
+The Orbis Cascade Alliance will present these lessons on [Systems community calls](https://www.orbiscascade.org/programs/systems/calls/) from September 2024 through June 2025. Recordings will be posted to the lesson pages after the calls. Though the materials are written by and for Alliance central and member staff, we strived to make them product-agnostic to apply to a variety of institutions.
 
 ## Alliance Resources
 
