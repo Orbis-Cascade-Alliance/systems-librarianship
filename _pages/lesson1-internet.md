@@ -19,7 +19,14 @@ Though these scenarios can seem complex, the process of identifying the causes i
 
 This lesson will cover the basics of how this information exchange takes place, so you can work out which piece has gone awry in a variety of situations. These foundational concepts are particularly dense, so the contents will presented live over two sessions.
 
+## Recordings and Materials
+
+[Part I Slides](https://docs.google.com/presentation/d/11DEled1ZU8B4_S0p14jK1LVKljzBTTo_iVqoijmStqI/edit?usp=drive_link) (For presentation September 12, 2024)
+
+[Part II Slides](https://docs.google.com/presentation/d/1f3HstrrtdeWkEoCee0eRcO87Ow-e1oRWAHubZtI9f0k/edit?usp=drive_link) (For presentation October 10, 2024)
+
 ## In This lesson
+
 1. [Servers and Clients](#servers-and-clients)
     1. [HTML, CSS, and JavaScript](#html-css-and-javascript)
 2. [IP Addresses](#ip-addresses)
@@ -238,7 +245,7 @@ In computing, multiple processes could require access to limited resources. Simi
 
 Now imagine the conference doesn't cater dinner, and you decide to order room service. You don't know or care how many other hotel guests also want their dinners. You don't have to coordinate with them. The kitchen will figure that out. You simply use the hotel's phone line or website to place your order, and then you wait for staff to knock at your door with the food on a tray. In the meantime, you could watch television, take a well-deserved nap, or do any number of things.
 
-Room service is like an **asynchronous** request in an application. Modern websites utilize asynchronous requests to return some information to users quickly, while loading more information that takes time to generate. The user can see and take other actions on the webpage, instead of waiting for the application to complete all tasks before returning everything at once.
+Room service is like an **asynchronous** request in an application. Modern websites utilize asynchronous requests to return some information to users quickly, while loading more information that takes time to generate. The user can see and take other actions on the webpage, instead of waiting for the application to complete all tasks before returning everything at once. People often refer to these as **AJAX** requests (Asynchronous JavaScript and XML), which is the technique specific to web browsers.
 
 For example, if you submit any search in [Archives West](https://archiveswest.orbiscascade.org), you'll first see a page with a spinning icon. This is the HTML content returned to the browser by the initial GET request.
 
@@ -272,7 +279,7 @@ The screenshot below of Firefox's tools highlights the iframe element used to di
 
 [![Screenshot of the Inspector in Firefox web developer tools]({{ "/assets/img/devtools-inspector.png" | absolute_url }})]({{ "/assets/img/devtools-inspector.png" | absolute_url }})
 
-If you want, you can manipulate the HTML to change how the page looks. Try right-clicking on an HTML element and selecting Delete Node or Delete Element. That content will disappear from the webpage. It's okay, you're only deleting it from the client, not the server. The element will appear again after you refresh the page.
+If you want, you can manipulate the HTML to change how the page looks. Try right-clicking on an HTML element and selecting Delete Node or Delete Element. That content will disappear from the webpage. You can also rewrite the contents of elements with "Edit As HTML". It's okay, you're only making these changes on the client, not the server. All elements will reappear in their original states after you refresh the page.
 
 [![Screenshot of the Inspector in Firefox web developer tools, node deletion option]({{ "/assets/img/devtools-inspector-delete.png" | absolute_url }})]({{ "/assets/img/devtools-inspector-delete.png" | absolute_url }})
 
