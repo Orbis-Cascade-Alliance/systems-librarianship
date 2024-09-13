@@ -21,8 +21,13 @@ This lesson will cover the basics of how this information exchange takes place, 
 
 ## Recordings and Materials
 
-[Part I Slides](https://docs.google.com/presentation/d/11DEled1ZU8B4_S0p14jK1LVKljzBTTo_iVqoijmStqI/edit?usp=drive_link) (For presentation September 12, 2024)
+### Part I
 
+[Part I Slides](https://docs.google.com/presentation/d/11DEled1ZU8B4_S0p14jK1LVKljzBTTo_iVqoijmStqI/edit?usp=drive_link) (Presented September 12, 2024)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7UlCeuUzCdc?si=gcvJxuK7Bo8skJzr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Part II
 [Part II Slides](https://docs.google.com/presentation/d/1f3HstrrtdeWkEoCee0eRcO87Ow-e1oRWAHubZtI9f0k/edit?usp=drive_link) (For presentation October 10, 2024)
 
 ## In This lesson
