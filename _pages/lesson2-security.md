@@ -135,7 +135,7 @@ The two most common authentication methods for API calls are **API keys** and th
 
 2. In the "Authorization" header of the HTTP request, e.g., `curl -H 'Authorization: Bearer {your key}' https://apis.example.com/path`
 
-For additional security, the key may be associated with limited permissions. For example, when using the [Ex Libris Developer Network](https://developers.exlibrisgroup.com/) to set up your keys, you'll specify which APIs this key has access to (Bibliograhpic Records, Users, etc.) and whether calls made with it may change your records or only read them.
+For additional security, the key may be associated with limited permissions. For example, when using the [Ex Libris Developer Network](https://developers.exlibrisgroup.com/) to set up your keys, you'll specify which APIs this key has access to (Bibliographic Records, Users, etc.) and whether calls made with it may change your records or only read them.
 
 **OAuth** can be more complicated to set up. Rather than writing a static key into your requests, you'll need to code your application to obtain an **access token** from the API server. This step may include logging in to a user account in a browser to authorize the application to access your data. Like with API keys, this access token must be included in every request. However, access tokens will also expire after a period of time, so your application will likely also need to request a **refresh token**, which will allow it to obtain fresh access tokens automatically without prompting you to log in again.
 
