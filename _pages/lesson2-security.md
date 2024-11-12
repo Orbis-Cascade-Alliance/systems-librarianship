@@ -33,9 +33,11 @@ Though cybersecurity might not be in your job description, as a systems libraria
 
 Kicked off by Tim Berners-Lee's vision of the World Wide Web, the **Hypertext Transfer Protocol (HTTP)** was developed through the early 1990s. This protocol allowed clients and servers to communicate to deliver hypertext documents, and it successfully formed the foundation of the modern Internet.
 
-However, these communications weren't **encrypted,** leaving early netizens vulnerable to identity theft and other crimes. Malicious actors who intercepted messages could steal passwords, credit card numbers, and other private information users sent to websites they trusted.
+However, these communications were easily decipherable and readable by humans. This left early netizens vulnerable to identity theft and other crimes. Malicious actors who intercepted messages could steal passwords, credit card numbers, and other private information users sent to websites they trusted.
 
-In the late 2010s, Google and Mozilla mandated that all major web browsers require websites to be served over **HTTPS** by default. HTTPS extends HTTP by adding a layer of encryption through **Transport Layer Security (TLS)**. Early versions of TLS were called **Secure Sockets Layer (SSL)**, hence HTTP**S**, HTTP over SSL. Though SSL was officially deprecated in 2011, people tend to use the two acronyms interchangeably, and you'll still see security certificates for website domains referred to as "SSL certificates."
+In the late 2010s, Google and Mozilla mandated that all major web browsers require websites to be served over **HTTPS** by default. HTTPS extends HTTP by adding a layer of **encryption**, which uses algorithms to disguise messages as meaningless strings of characters. For example, if a user types "password123" into a form, after encryption the message might instead look like "Sjv5a+pZdG/h3v1ON6+RGqAi" until the intended recipient decodes it.
+
+HTTPS uses the **Transport Layer Security (TLS)** protocol to accomplish this. Early versions of TLS were called **Secure Sockets Layer (SSL)**, hence HTTP**S**, HTTP over SSL. Though SSL was officially deprecated in 2011, people tend to use the two acronyms interchangeably, and you'll still see security certificates for website domains referred to as "SSL certificates."
 
 TLS uses cryptographic **keys** to scramble data so it can't be read by bad actors, even if they manage to "sniff" the traffic flowing between clients and servers.
 
