@@ -15,7 +15,9 @@ Though cybersecurity might not be in your job description, as a systems libraria
 
 ## Recording and Materials
 
-[Slides](https://docs.google.com/presentation/d/1Az9qYO0bjHsgoRtMMNNb44dCvKV-TlnxufHtJXG1jpc/edit?usp=sharing) (For presentation November 14, 2024)
+[Slides](https://docs.google.com/presentation/d/1Az9qYO0bjHsgoRtMMNNb44dCvKV-TlnxufHtJXG1jpc/edit?usp=sharing) (Presented November 14, 2024)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qBb9b9z-fSU?si=ggRjbRdh5jhFOu_F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## In This lesson
 
