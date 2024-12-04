@@ -173,7 +173,7 @@ Here's an example of a facet index for subjects in one of the repositories of Ar
 
 Each of the participating repositories in Archives West has a similar document database. With this structure, the application can quickly check fortyish short documents for finding aids that contain the subject term "Artifacts," instead of reading through forty thousand long documents! In reverse, scripts can use the index to fetch all of the subjects associated with the ARKs in a set of full-text results, so users can further refine their queries.
 
-Any platform with a search interface likely takes a similar approach to the different components of its interface, and queries indexes rather than the source records in MARC, Dublin Core, EAD, etc. Though you might not need to build a website like Archives West from scratch, understanding where applications rely on indexes will come in handy for some common troubleshooting scenarios.
+Most research platforms likely take a similar approach to the different components of their interfaces, and they query indexes rather than source records in MARC, Dublin Core, EAD, etc. Though you might not need to build a website like Archives West from scratch, understanding where applications rely on indexes will come in handy for some common troubleshooting scenarios.
 
 Examples:
 
