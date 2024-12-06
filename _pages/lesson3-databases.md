@@ -19,6 +19,8 @@ This lesson will provide a short overview of the types of databases most relevan
 
 [Slides](https://docs.google.com/presentation/d/1RGBpLBjHMPCfy6aYl-UZhhd3PqlRxfT4JBdkdlMAmos/edit?usp=sharing) (for presentation December 12, 2024)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r6ZnzCp1OjA?si=mYmjqYLNpgDZKBkf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## In This lesson
 
 1. [Database Types](#database-types)
