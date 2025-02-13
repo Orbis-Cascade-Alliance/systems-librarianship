@@ -60,6 +60,7 @@ Successful communication requires a range of soft and hard skills.
 It takes time and practice to learn and develop these skills. Learn from your successes and mistakes. 
 
 ### Soft Skills
+
 - Empathy
   - Understanding different user perspectives
   - Supporting frustrated/upset people
@@ -94,6 +95,7 @@ Hard skills generally need to be complemented by soft skills to be most effectiv
   - Not unlike a [Reference Interview](https://libguides.lcc.edu/ri/desk-ref-interview)
   
 ### Actionable Tips
+
 While you're developing and practicing your skills over time, here are some tips that you can use right away. 
 - Avoid acronyms. 
   - If you need them, define them first
@@ -127,30 +129,46 @@ Explain Primo VE to a first-year undergraduate student in a minute or less witho
 - Where to find it
   - Your employer, public library, or local community college may offer training through in-person classes, LinkedIn Learning, Ed2Go, MindEdge, Gale Courses, or others. 
   - Library conferences or professional organizations also sometimes offer sessions or workshops covering these topics.
+  
 ## Practice Scenarios
+
 ### Scenario 1: The Case of the Disappearing Ebook
+
 #### Scenario
+
 A faculty member has been using a library e-book for her course textbook. She sends you a panicked email during the third week of the term that the e-book link in Primo is no longer working. 
 Meanwhile, circulation desk staff call you to tell you that students in the class are reporting the same problem.
+
 #### Discussion Questions
+
 - Whom do you need to communicate with in this situation?
   - When?
   - How? 
 - What are the technical aspects of this problem that you may need to communicate?
 - What are the affective aspects of this problem?
+  
 ### Scenario 2: Training Camp
+
 #### Scenario
+
 You are giving a presentation on Title II digital accessibility requirements and what it means for the library in your next all-department/division meeting.
+
 #### Discussion Questions
+
 - Who makes up the audience in your all department/division meeting? 
 - What technical examples would you use to make this relevant to your audience? 
 - What stories or analogies would you use to make this relevant to your audience?
 - What action items would you want your audience to leave with?
+
 ### Scenario 3: Persuasive Power
+
 #### Scenario
+
 You're writing a budget request for specialized scanners and software to support an archival photo digitization project. 
 The same budget request will go through two committees: an IT technical review committee and a budget committee made up of fiscal services staff and non-library administrators.
+
 #### Discussion Questions
+
 - How would you explain the overall importance of this project to non-library colleagues?  
   - What might appeal to your different audiences? 
 - What kind of technical details would you include for the IT review committee?
