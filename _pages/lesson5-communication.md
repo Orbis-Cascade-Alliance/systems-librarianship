@@ -14,9 +14,13 @@ Michele DeSilva (Central Oregon Community College) will present this lesson in t
 - Identify common communication tasks for Systems Librarians
 - Identify necessary skills for successful communication and how to develop them
 - Apply actionable tips for different communication scenarios
+  
 ## Introduction
+
 You may picture the life of a Systems Librarian as a quiet, computer-based job, where you write code and configure systems in relative solitude. While there's an element of that and it is more solitary than other very public-facing library roles, there's also a surprising amount of communication and interaction involved in the job.
+
 ## Contacts
+
 Systems Librarians have a large and varied communication network that includes 
 - library users
 - administrators
@@ -30,8 +34,11 @@ Systems Librarians have a large and varied communication network that includes
 - non-library faculty/staff colleagues
 - library administrators and colleagues
 - vendors
+
 > Think about it: Are there any other contacts you'd add to this list?
+
 ## Common Communication Tasks
+
 Like their large and varied communication networks, systems librarians have a wide range of communication tasks. These include
 - Supporting end-users who have a variety of technical skill levels and interests
 - Translate user needs into technical requirements
@@ -48,8 +55,10 @@ Like their large and varied communication networks, systems librarians have a wi
 - Train/instruct colleagues and users
 
 ## Useful Skills
+
 Successful communication requires a range of soft and hard skills. 
 It takes time and practice to learn and develop these skills. Learn from your successes and mistakes. 
+
 ### Soft Skills
 - Empathy
   - Understanding different user perspectives
@@ -66,7 +75,9 @@ It takes time and practice to learn and develop these skills. Learn from your su
 - Curiosity
   - Openness to learning about different library functional areas, processes, and procedures
   - Willingness to learn about new trends and solutions
+  
 ### Hard Skills (with soft edges)
+
 Hard skills generally need to be complemented by soft skills to be most effective. 
 - Technical knowledge
   - You won't have all you need to start with, so curiosity is the complementary soft skill here. 
@@ -81,6 +92,7 @@ Hard skills generally need to be complemented by soft skills to be most effectiv
     -Listening is another skill that many consider a soft skill. There are [specific and concrete techniques](https://extension.usu.edu/relationships/faq/using-active-listening-to-enhance-your-relationships) you can use to become a better listener. But, it's also an area where you need soft skills like empathy and curiosity to be truly effective. 
 - Asking the right questions
   - Not unlike a [Reference Interview](https://libguides.lcc.edu/ri/desk-ref-interview)
+  
 ### Actionable Tips
 While you're developing and practicing your skills over time, here are some tips that you can use right away. 
 - Avoid acronyms. 
@@ -96,10 +108,14 @@ While you're developing and practicing your skills over time, here are some tips
   - Assume best intentions
   - Everyone has different perspectives and different levels of understanding about technology and libraries
 - Include examples whenever possible, whether in training, tickets, or documentation.
+
 #### Practice 
+
 You’re taking a shift at the library table at your institution’s student resource fair. 
 Explain Primo VE to a first-year undergraduate student in a minute or less without using library jargon. Jargon includes the words database, discovery, metadata, and catalog.
+
 ## Structured Learning 
+
 - Useful Topics/Courses 
   - Technical Writing
   - Business Communication
