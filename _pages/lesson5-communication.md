@@ -7,7 +7,29 @@ order: 5
 
 # {{ page.title }}
 
-Michele DeSilva (Central Oregon Community College) will present this lesson in the February 2025 Systems community call.
+Michele DeSilva (Central Oregon Community College) presented this lesson in the February 2025 Systems community call.
+
+## Recordings and Materials
+[Slides] (https://docs.google.com/presentation/d/1PxbZTaOrQUtTt-BjGNGQtSSP6bbezH6ipdVC2MFnzJI/edit?usp=drive_link) (for presentation February 13, 2025)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LsiFoHC6k1k?si=R4sthZldpiFWv5SJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## In This Lesson
+
+1. [Objectives] (#objectives)
+2. [Introduction] (#introduction)
+3. [Contacts] (#contacts)
+4. [Common Communication Tasks] (#common-communication-tasks)
+5. [Useful Skills] (#useful-skills)
+    1. [Soft Skills] (#soft-skills)
+    2. [Hard Skills (with soft edges)] (#hard-skills-with-soft-edges)
+    3. [Actionable Tips] (#actionable-tips)
+        1. [Practice] (#practice)
+6. [Structured Learning] (#structured-learning)
+7. [Practice Scenarios] (#practice-scenarios)
+    1. [Scenario 1: The Case of the Disappearing Ebook] (#scenario-1-the-case-of-the-disappearing-ebook)
+    2. [Scenario 2: Training Camp] (#scenario-2-training-camp)
+    3. [Scenario 3: Persuasive Power] (#scenario-3-persuasive-power)
 
 ## Objectives
 - Identify key audiences Systems Librarians communicate with
