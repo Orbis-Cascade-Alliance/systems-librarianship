@@ -16,20 +16,20 @@ Michele DeSilva (Central Oregon Community College) presented this lesson in the 
 
 ## In This Lesson
 
-1. [Objectives] (#objectives)
-2. [Introduction] (#introduction)
-3. [Contacts] (#contacts)
-4. [Common Communication Tasks] (#common-communication-tasks)
-5. [Useful Skills] (#useful-skills)
-    1. [Soft Skills] (#soft-skills)
-    2. [Hard Skills (with soft edges)] (#hard-skills-with-soft-edges)
-    3. [Actionable Tips] (#actionable-tips)
-        1. [Practice] (#practice)
-6. [Structured Learning] (#structured-learning)
-7. [Practice Scenarios] (#practice-scenarios)
-    1. [Scenario 1: The Case of the Disappearing Ebook] (#scenario-1-the-case-of-the-disappearing-ebook)
-    2. [Scenario 2: Training Camp] (#scenario-2-training-camp)
-    3. [Scenario 3: Persuasive Power] (#scenario-3-persuasive-power)
+1. [Objectives](#objectives)
+2. [Introduction](#introduction)
+3. [Contacts](#contacts)
+4. [Common Communication Tasks](#common-communication-tasks)
+5. [Useful Skills](#useful-skills)
+    1. [Soft Skills](#soft-skills)
+    2. [Hard Skills (with soft edges)](#hard-skills-with-soft-edges)
+    3. [Actionable Tips](#actionable-tips)
+        1. [Practice](#practice)
+6. [Structured Learning](#structured-learning)
+7. [Practice Scenarios](#practice-scenarios)
+    1. [Scenario 1: The Case of the Disappearing Ebook](#scenario-1-the-case-of-the-disappearing-ebook)
+    2. [Scenario 2: Training Camp](#scenario-2-training-camp)
+    3. [Scenario 3: Persuasive Power](#scenario-3-persuasive-power)
 
 ## Objectives
 - Identify key audiences Systems Librarians communicate with
