@@ -10,7 +10,7 @@ order: 5
 Michele DeSilva (Central Oregon Community College) presented this lesson in the February 2025 Systems community call.
 
 ## Recordings and Materials
-[Slides]([url](https://docs.google.com/presentation/d/1PxbZTaOrQUtTt-BjGNGQtSSP6bbezH6ipdVC2MFnzJI/edit?usp=drive_link)) (for presentation February 13, 2025)
+[Slides](https://docs.google.com/presentation/d/1PxbZTaOrQUtTt-BjGNGQtSSP6bbezH6ipdVC2MFnzJI/edit?usp=drive_link) (for presentation February 13, 2025)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LsiFoHC6k1k?si=R4sthZldpiFWv5SJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
