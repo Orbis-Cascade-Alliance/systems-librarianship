@@ -19,13 +19,14 @@ and helpful, or at least food for thought.
 
 ## Lesson Objectives
 Plan out the rhythm of your year in broad strokes, creating a framework to anchor your schedule.
-Why do this?​
 
-- Put yourself first​
+1. [Why do this?​](#Why-do-this?)
 
-- The usual work events​
+2. [Put yourself first​](#Put-yourself-first)
 
-- Systems-specific considerations​
+3. [The usual work events​](#The-usual-work-events)
+
+4. [Systems-specific considerations​](#Systems-specific-considerations)
 
 As Amanda Kirby wrote, “Create rhythms -  create some structure and rhythms around the variability of every week – have some tasks you always do on certain days and at certain times.  Have clear beginnings 
 and endings of the day, too and create some change behaviours to reinforce that e.g. cup of tea/change your clothes at the end of the day.” (4/9/24 LinkedIn email, Neurodiversity 101: How to set and meet our goals)​
