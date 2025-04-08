@@ -33,6 +33,9 @@ and endings of the day, too and create some change behaviours to reinforce that 
 
 Put your hand on your heart. Breathe in.  Breathe out. Feel your heart beating.  It’s the one thing you can always use to ground yourself.​
 
+![Hands forming heart]({{ "/assets/img/Rhythm-heart-hands.jpg" | absolute_url }})
+
+
 ## Why do this?  
 The answer will vary for each of you. ​
 
