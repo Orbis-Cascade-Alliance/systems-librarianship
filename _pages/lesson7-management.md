@@ -20,11 +20,11 @@ and helpful, or at least food for thought.
 ## Lesson Objectives
 Plan out the rhythm of your year in broad strokes, creating a framework to anchor your schedule.
 
-1. [Why do this?​](#Why-do-this?)
+1. [Why do this?​](#why-do-this)
 
-2. [Put yourself first​](#Put-yourself-first)
+2. [Put yourself first​](#put-yourself-first-)
 
-3. [The usual work events​](#The-usual-work-events)
+3. [The usual work events​](#general-work-events)
 
 4. [Systems-specific considerations​](#Systems-specific-considerations)
 
@@ -154,7 +154,9 @@ I mentioned this earlier, but another tool I use is color-coding kinds of calend
 
 Do I do this perfectly and completely?  Absolutely not.  Some weeks I’m just flying by the seat of my pants – but doing as much as possible in advance really helps keep me on track on the weeks I’m too busy or overcommitted to think.   ​
 
+Put your hand on your heart. Breathe in.  Breathe out. Feel your heart beating.  It’s the one thing you can always use to ground yourself.​
+
 ![Hands forming heart]({{ "/assets/img/Rhythm-hearthands.jpg" | absolute_url }})
 
 
-Put your hand on your heart. Breathe in.  Breathe out. Feel your heart beating.  It’s the one thing you can always use to ground yourself.​
+
