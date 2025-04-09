@@ -33,7 +33,7 @@ and endings of the day, too and create some change behaviours to reinforce that 
 
 Put your hand on your heart. Breathe in.  Breathe out. Feel your heart beating.  It’s the one thing you can always use to ground yourself.​
 
-![Hands forming heart]({{ "/assets/img/Rhythm-heart-hands.jpg" | absolute_url }})
+![Hands forming heart]({{ "/assets/img/Rhythm-hearthands.jpg" | absolute_url }})
 
 
 ## Why do this?  
@@ -120,7 +120,7 @@ More granularly, you may wish to consider how many hours a week you should gener
 ## Systems-specific considerations
 What needs to be scheduled for your specific job and duties? 
 
-![Systems dates checklist]({{ "/assets/img/Rhythm-saystems-dates.png" | absolute_url }})
+![Systems dates checklist]({{ "/assets/img/Rhythm-systems-dates.png" | absolute_url }})
 
 
 The obvious one is conferences, both ones you will attend, and ones for which you know will mean lots of colleagues will be away.  They may not all announce dates by the beginning of the year, but you can make a list of conferences to watch for – or maybe set an AI to remind you? ​
@@ -154,7 +154,7 @@ I mentioned this earlier, but another tool I use is color-coding kinds of calend
 
 Do I do this perfectly and completely?  Absolutely not.  Some weeks I’m just flying by the seat of my pants – but doing as much as possible in advance really helps keep me on track on the weeks I’m too busy or overcommitted to think.   ​
 
-![Hands forming heart]({{ "/assets/img/Rhythm-heart-hands.jpg" | absolute_url }})
+![Hands forming heart]({{ "/assets/img/Rhythm-hearthands.jpg" | absolute_url }})
 
 
 Put your hand on your heart. Breathe in.  Breathe out. Feel your heart beating.  It’s the one thing you can always use to ground yourself.​
