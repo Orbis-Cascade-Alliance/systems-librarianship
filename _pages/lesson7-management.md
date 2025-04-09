@@ -9,6 +9,7 @@ order: 7
 
 Margaret Alexander (UO) will present this lesson in the April 2025 Systems community call.
 ​
+<a href="https://docs.google.com/presentation/d/1RVL4C7YmzqNXUIZ4fEogyMCAw-KLyYA5/edit?usp=drive_link&ouid=115463018548598782235&rtpof=true&sd=true"> Slides</a> (Presented April 10, 2025)
 
 Systems Librarians spend a lot of time troubleshooting and communicating. Lots of reacting. This can become all consuming, but there are ways to construct a regular plan for your year, anchoring yourself 
 with touchpoints and annual commitments. While few Systems Librarians have exactly the same job descriptions, my examples and process should be helpful to most people who work on Alma and/or Primo as the 
@@ -24,14 +25,18 @@ Plan out the rhythm of your year in broad strokes, creating a framework to ancho
 
 2. [Put yourself first​](#put-yourself-first-)
 
-3. [The usual work events​](#general-work-events)
+3. [General work events​](#general-work-events)
 
 4. [Systems-specific considerations​](#Systems-specific-considerations)
 
 As Amanda Kirby wrote, “Create rhythms -  create some structure and rhythms around the variability of every week – have some tasks you always do on certain days and at certain times.  Have clear beginnings 
 and endings of the day, too and create some change behaviours to reinforce that e.g. cup of tea/change your clothes at the end of the day.” (4/9/24 LinkedIn email, Neurodiversity 101: How to set and meet our goals)​
 
-Put your hand on your heart. Breathe in.  Breathe out. Feel your heart beating.  It’s the one thing you can always use to ground yourself.​
+Put your hand on your heart. 
+Breathe in.  
+Breathe out. 
+Feel your heart beating.  
+It’s the one thing you can always use to ground yourself.​
 
 ![Hands forming heart]({{ "/assets/img/Rhythm-hearthands.jpg" | absolute_url }})
 
@@ -70,7 +75,7 @@ I also want to note that I heavily use my color coding options in my calendar, f
 
 For example: ​
 
-Make sure your important anniversaries, and celebrations are on your calendar – and not so cryptically that you have no idea what you meant later.  Either request leave at the point you put it on the calendar, if you want to take leave, or note on the calendar that you have not yet requested/notified leave.  ​
+Make sure your important anniversaries and celebrations are on your calendar – and not so cryptically that you have no idea what you meant later.  Either request leave at the point you put it on the calendar, if you want to take leave, or note on the calendar that you have not yet requested/notified leave.  ​
 
 Do you have hobbies that have regular events?  I play with the Society for Creative Anachronism (the Middle Ages as it should have been), and there are weekly crafting nights, monthly council meetings, and really events somewhere any weekend of the year, if you want to go.  I focus on just a few of those, but do make sure I know when they are going to be. ​
 
