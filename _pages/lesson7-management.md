@@ -8,7 +8,7 @@ order: 7
 # The Rhythm of the Year: Creating a Framework for Systems Librarian Work
 
 Margaret Alexander (UO) will present this lesson in the April 2025 Systems community call.
-​
+<p>​
 <a href="https://docs.google.com/presentation/d/1RVL4C7YmzqNXUIZ4fEogyMCAw-KLyYA5/edit?usp=drive_link&ouid=115463018548598782235&rtpof=true&sd=true"> Slides</a> (Presented April 10, 2025)
 
 Systems Librarians spend a lot of time troubleshooting and communicating. Lots of reacting. This can become all consuming, but there are ways to construct a regular plan for your year, anchoring yourself 
