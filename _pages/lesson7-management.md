@@ -7,9 +7,7 @@ order: 7
 
 # The Rhythm of the Year: Creating a Framework for Systems Librarian Work
 
-Margaret Alexander (UO) will present this lesson in the April 2025 Systems community call.
-​
-<a href="https://docs.google.com/presentation/d/1RVL4C7YmzqNXUIZ4fEogyMCAw-KLyYA5/edit?usp=drive_link&ouid=115463018548598782235&rtpof=true&sd=true"> Slides</a> (Presented April 10, 2025)
+Margaret Alexander (UO) presented this lesson in the April 2025 Systems community call.
 
 Systems Librarians spend a lot of time troubleshooting and communicating. Lots of reacting. This can become all consuming, but there are ways to construct a regular plan for your year, anchoring yourself 
 with touchpoints and annual commitments. While few Systems Librarians have exactly the same job descriptions, my examples and process should be helpful to most people who work on Alma and/or Primo as the 
@@ -17,6 +15,10 @@ central part of their duties, or applicable to teams who do this work, and most 
 
 For some people much of the content of this presentation may be familiar already, and it’s not particularly technically whiz-bang, but I hope everyone can find at least a couple of tips that may be new 
 and helpful, or at least food for thought. 
+
+## Recording and Materials
+
+[Slides](https://docs.google.com/presentation/d/1RVL4C7YmzqNXUIZ4fEogyMCAw-KLyYA5/edit?usp=drive_link&ouid=115463018548598782235&rtpof=true&sd=true") (Presented April 10, 2025)
 
 ## Lesson Objectives
 Plan out the rhythm of your year in broad strokes, creating a framework to anchor your schedule.
