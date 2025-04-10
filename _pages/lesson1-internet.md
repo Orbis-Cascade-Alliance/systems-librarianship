@@ -55,7 +55,7 @@ From Berners-Lee's "[Information Management: A Proposal](https://www.w3.org/Hist
 
 Everything we do on the internet is an exchange of data between "clients" and "servers." These terms have the same essential meaning as in colloquial English: when you visit a restaurant as a **client,** you place an order with your **server,** and they deliver the food you requested.
 
-Similarly, when you visit a website, your browser is the client requesting the page from the server, and the physical or virutal machine hosting the website is the server that returns the page as **HTML** (Hypertext Markup Language). Servers can also return data in other formats for programmatic use, which will be covered under [Requests and APIs](#requests-and-apis) below.
+Similarly, when you visit a website, your browser is the client requesting the page from the server, and the physical or virtual machine hosting the website is the server that returns the page as **HTML** (Hypertext Markup Language). Servers can also return data in other formats for programmatic use, which will be covered under [Requests and APIs](#requests-and-apis) below.
 
 A "server" can also refer to one program on a machine. **MySQL** is a common database program that uses client/server architecture. If you want to install a WordPress website, you first need to install and configure the MySQL database server package, and then start the service. While the service is running, you can use the command-line client to tell the service to create databases, query them, update them, delete them, and so on. The future lesson [Intro to Databases]({{ "/databases" | absolute_url }}) will expand on MySQL.
 
