@@ -20,6 +20,8 @@ and helpful, or at least food for thought.
 
 [Slides](https://docs.google.com/presentation/d/1RVL4C7YmzqNXUIZ4fEogyMCAw-KLyYA5/edit?usp=drive_link&ouid=115463018548598782235&rtpof=true&sd=true") (Presented April 10, 2025)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HlDEfoWf3tA?si=I-dM3LAQSsHrRNDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Lesson Objectives
 Plan out the rhythm of your year in broad strokes, creating a framework to anchor your schedule.
 
