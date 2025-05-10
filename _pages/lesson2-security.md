@@ -30,7 +30,7 @@ Though cybersecurity might not be in your job description, as a systems libraria
     1. [API Authentication Methods](#api-authentication-methods)
     2. [CORS](#cors)
     3. [Application Design](#application-design)
-    
+
 ## Security Certificates
 
 Kicked off by Tim Berners-Lee's vision of the World Wide Web, the **Hypertext Transfer Protocol (HTTP)** was developed through the early 1990s. This protocol allowed clients and servers to communicate to deliver hypertext documents, and it successfully formed the foundation of the modern Internet.
@@ -149,7 +149,7 @@ Here's an illustration of the process from [Google's documentation](https://deve
 
 By default, web browsers permit scripts to access resources only from the same domain and port. A webpage at *myschool.edu* may contain a script that asynchronously fetches the output of *myschool.edu/library/myapp.php,* but that same script would fail if it were placed on a webpage at *anotherschool.edu.* This is called the **same-origin policy.** The same-origin policy applies only to JavaScript, not to other types of resources on a webpage like images, or to requests made directly by web servers through methods like cURL.
 
-**Cross-origin resource sharing (CORS)** is a mechanism that allows or restricts JavaScript access across domains. APIs define their CORS policies to allow broad access from all domains, or only specific known domains, or no external domains at all. To allow webpage in the world to call *myapp.php* through JavaScript, the developer could put this code at the top of the file:
+**Cross-origin resource sharing (CORS)** is a mechanism that allows or restricts JavaScript access across domains. APIs define their CORS policies to allow broad access from all domains, or only specific known domains, or no external domains at all. To allow any webpage in the world to call *myapp.php* through JavaScript, the developer could put this code at the top of the file:
 
 ```<?php header("Access-Control-Allow-Origin: *"); ?>```
 
