@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # Repository subfolder
 url: "https://github.orbiscascade.org/systems-librarianship" # The GitHub domain and repository, e.g., https://github.orbiscascade.org/systems-librarianship
 logo: "/assets/img/orbis_cascade_logo.png"
+project: "Orbis-Cascade-Alliance/systems-librarianship" # The path to the project on github.com
 
 # Build settings
 remote_theme: pages-themes/minimal@v0.2.0
